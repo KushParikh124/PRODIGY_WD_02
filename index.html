@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Stopwatch</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="stopwatch">
+    <div id="display" class="stopwatch-display">00:00:00:00</div>
+    <div class="button-group">
+      <button id="startStop" class="btn start" onclick="startStop()"><i class="fas fa-play"></i></button>
+      <button id="reset" class="btn reset" onclick="reset()"><i class="fas fa-stop"></i></button>
+      <button id="lap" class="btn lap" onclick="lap()"><i class="fas fa-flag"></i></button>
+    </div>
+    <ul id="lapTimes" class="lap-times"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
